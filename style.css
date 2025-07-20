@@ -51,7 +51,7 @@ body {
 .cta-btn {
     margin-top: 25px;
     border: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat, sans-serif';
 }
 .hero-cta:hover {
   background-color: #42e0be;

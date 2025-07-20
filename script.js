@@ -7,11 +7,7 @@
 
 
   // Маска для телефона (минимальный пример)
-  const phoneInput = document.getElementById('phone');
-  phoneInput.addEventListener('input', function(e) {
-    this.value = this.value.replace(/[^\d+()-\s]/g, '');
-  });
-
+  
 //   // Обработка отправки (заглушка — сюда вставим Telegram)
 //   document.getElementById('briefForm').addEventListener('submit', function(e) {
 //     e.preventDefault();
