@@ -432,8 +432,17 @@ label{
   padding: 0px !important;
 }
 @media screen and (max-width: 900px) {
-  input, select, textarea {
-    width: clamp(280px, 39vw, 354px) !important;
+  .form-grid{
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center; /* Центрирует колонки, если они не заполняют всю ширину */
+  max-width: 400px; /* Ограничиваем ширину контейнера под 1 колонку */
+  margin: 0 auto; /* Центрируем сам контейнер */
+   
   }
+input[type="text"], input[type="email"], input[type="tel"], textarea{
+  max-width: 366px;
+    width: auto !important;
+  }
+
   
 }
