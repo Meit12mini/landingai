@@ -12,7 +12,7 @@ header{
   z-index: 50;
   position: fixed;
   img{
-    height: 90px;
+    height: clamp(55px,5vw,90px);
     background-color: #ECECEC;
     
   }
@@ -107,7 +107,7 @@ position: absolute;
 
 .step {
   flex: 1 1 30%;
-  background-color: #1F1F1F;
+  background-color: #000;
   padding: 2rem;
   border-radius: 0.75rem;
   text-align: center;
@@ -430,4 +430,10 @@ label{
 }
 .footer-grid{
   padding: 0px !important;
+}
+@media screen and (max-width: 900px) {
+  input, select, textarea {
+    width: clamp(280px, 39vw, 354px) !important;
+  }
+  
 }
