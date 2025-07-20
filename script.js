@@ -5,6 +5,10 @@
     document.querySelector('#brief').scrollIntoView({ behavior: 'smooth' });
   });
 
+ document.querySelector('.logo').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
+  });
 
   // Маска для телефона (минимальный пример)
   
