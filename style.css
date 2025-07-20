@@ -374,7 +374,7 @@ select[multiple] option.selected {
   transition: all 0.2s ease-in-out;
 }
 input:focus {
-    border-color: #42e0be; /* чуть темнее розовый при фокусе */
+    border-color: #42e0be;
     box-shadow: 0 0 0 3px rgba(66,224,190, 0.2);
 }
 
