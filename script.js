@@ -1,9 +1,30 @@
 
+// Для ссылки "Как это работает"
+document.querySelector('a[href="#work"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#work').scrollIntoView({ behavior: 'smooth' });
+});
 
+// Для ссылки "Что внутри"
+document.querySelector('a[href="#more"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#more').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Для ссылки "Партнеры"
+document.querySelector('a[href="#partner"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#partner').scrollIntoView({ behavior: 'smooth' });
+});
   document.querySelector('.hero-cta').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector('#brief').scrollIntoView({ behavior: 'smooth' });
   });
+  document.querySelector('.hero-cta-header').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#brief').scrollIntoView({ behavior: 'smooth' });
+  });
+
 
  document.querySelector('.logo').addEventListener('click', function(e) {
     e.preventDefault();
