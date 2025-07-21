@@ -62,3 +62,24 @@ var maskOptions = {
     
 }
 var mask = new IMask(element, maskOptions);
+
+
+  const form = document.querySelector('.brief-form');
+  const industry = document.getElementById('industry');
+  const routine = document.getElementById('routine');
+  const dialog = document.getElementById('contactDialog');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const isIndustryValid = industry.value !== '';
+    const isRoutineValid = routine.value.trim() !== '';
+
+    if (isIndustryValid && isRoutineValid) {
+      dialog.showModal();
+    } else {
+      // Простая подсветка ошибки
+      if (!isIndustryValid) industry.classList.add('error');
+      if (!isRoutineValid) routine.classList.add('error');
+    }
+  });
