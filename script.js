@@ -73,9 +73,9 @@ var mask = new IMask(element, maskOptions);
     e.preventDefault();
 
     const isIndustryValid = industry.value !== '';
-    const isRoutineValid = routine.value.trim() !== '';
+   
 
-    if (isIndustryValid && isRoutineValid) {
+    if (isIndustryValid) {
       dialog.showModal();
     } else {
       // Простая подсветка ошибки

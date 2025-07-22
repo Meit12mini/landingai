@@ -9,11 +9,11 @@
 <body>
   <header>
     <nav>
-        <img class="logo" src="./pack/file_000000004ef461f8afa9caf25650bdbd.svg" alt="Логотип Landing.AI" href="#top" />
+        <img class="logo logo-img" src="./pack/file_000000004ef461f8afa9caf25650bdbd.svg" alt="Логотип Landing.AI" href="#top" />
       <ul class="nav-list">
-        <li><a href="#work">Как это работает</a></li>
-        <li><a href="#more">Что внутри</a></li>
-        <li><a href="#partner">Партнеры</a></li>
+        <li><a class="header-link" href="#work">Как это работает</a></li>
+        <li><a class="header-link" href="#more">Что внутри</a></li>
+        <li><a class="header-link" href="#partner">Партнеры</a></li>
         <li><a href="#brief" class="hero-cta-header">Начать аудит</a></li>
       </ul>
     </nav>
@@ -103,23 +103,15 @@
 
     <form class="brief-form">
       <div class="form-grid">
-        <div class="form-group">
-          <label for="industry">Сфера деятельности</label>
-          <select id="industry" name="industry" required>
-            <option value="" disabled selected>Выберите...</option>
-            <option value="ecom">E-commerce</option>
-            <option value="school">Онлайн-школа</option>
-            <option value="b2b">Услуги B2B</option>
-            <option value="b2c">Услуги B2C</option>
-            <option value="realestate">Недвижимость</option>
-            <option value="construction">Строительство</option>
-            <option value="other">Другое</option>
-          </select>
+       <div class="form-group">
+          <label for="industry">Сфера деятельности *</label>
+          <input type="text" placeholder="Строительство, недвижимость, юр.услуги" id="industry" name="industry" required>
+        
         </div>
 
         <div class="form-group">
           <label for="routine">Ваши рутинные дела в работе с клиентами</label>
-          <textarea id="routine" name="routine" rows="1" placeholder="Мои менеджеры тратят кучу времени на ответы на одни и те же вопросы клиентов" required></textarea>
+          <textarea id="routine" name="routine" rows="1" placeholder="Мои менеджеры тратят кучу времени на ответы на одни и те же вопросы клиентов"></textarea>
         </div>
       </div>
 
@@ -148,17 +140,17 @@
     <h2>Оставьте контактные данные</h2>
 
     <div class="form-group">
-      <label for="name">Имя</label>
+      <label for="name">Имя *</label>
       <input type="text" id="name" name="name" required>
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email">Email *</label>
       <input type="email" id="email" name="email" required>
     </div>
 
     <div class="form-group">
-      <label for="phone">Телефон</label>
+      <label for="phone">Телефон *</label>
       <input type="tel" id="phone" name="phone" required>
     </div>
 

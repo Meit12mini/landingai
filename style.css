@@ -8,6 +8,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.logo-img{
+  width: 110px;
+  object-fit: cover;
+}
 header{
   z-index: 50;
   position: fixed;
@@ -58,6 +62,31 @@ nav{
     }
   }
 }
+
+.header-link {
+  position: relative;
+  color: white; /* Цвет текста */
+  text-decoration: none;
+  font-size: 16px; /* Размер текста */
+  padding-bottom: 5px; /* Отступ для полоски */
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px; /* Толщина полоски */
+  background-color: white; /* Цвет полоски */
+  
+   transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.header-link:hover::after {
+  width: 100%; /* Полоска растягивается на всю ширину текста */
+}
+
 .report-list {
   display:flex;
   flex-direction: column;
@@ -168,6 +197,9 @@ position: absolute;
   background-color: #121212;
   padding: 6rem 1.25rem;
   color: #ECECEC;
+}
+.brief-section{
+   padding: 6rem 1.25rem;
 }
 
 .section-title {
@@ -360,7 +392,6 @@ textarea {
 }
 
 textarea {
-  max-width: 354px;
   min-height: 144px;
   resize: vertical;
 }
@@ -543,7 +574,7 @@ dialog::backdrop {
 }
 
 .dialog-form input {
-  width: 100%;
+  width: auto;
   padding: 0.75rem;
   border-radius: 6px;
   border: 1px solid #333;
@@ -567,6 +598,7 @@ dialog::backdrop {
 }
 
 .close-btn {
+  padding: 0 1rem;
   margin-top: 1rem;
   background: transparent;
   color: #aaa;
